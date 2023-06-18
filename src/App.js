@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from "./logo.svg";
+import React, { useState } from "react";
+import Header from "./components/Header.js";
+import Easy from "./components/Easy.js";
+import Hard from "./components/Hard.js";
+import "./App.css";
+import DifficultyPrompt from "./components/DifficultyPrompt";
 
 function App() {
+  const [selectedDifficulty, setSelectedDifficulty] = useState(null);
+  const handleDifficultySelect = (difficulty) => {
+    setSelectedDifficulty(difficulty);
+    console.log("check", selectedDifficulty);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {selectedDifficulty ? (
+        <>
+          <Header />
+          {selectedDifficulty === "easy" ? <Easy /> : <Hard />}
+        </>
+      ) : (
+        <DifficultyPrompt onSelect={handleDifficultySelect} />
+      )}
     </div>
   );
 }
