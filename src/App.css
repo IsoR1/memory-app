@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* DIFFICULTY PAGE */
+.difficulty-container {
+  background-image: url("/src/images/targaryen-banner.svg");
+  flex-grow: 1;
+  display: flex;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 255);
+  flex-direction: column-reverse;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.difficulty-h3 {
+  color: #f7f7ff;
+}
+
+.difficulty-h3-buttons-div {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-basis: 80px;
+}
+
+.difficulty-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  background-color: #6f4451;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  flex-grow: 1;
+}
+
+/* EASY */
+
+.image {
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-grow: 2;
+  justify-content: center;
+}
+
+.img-cards {
+  display: grid;
+  gap: 25px;
+  grid-template-rows: max-content;
+}
+
+.card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card-p {
+  color: #f7f7ff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-p-div {
+  align-self: center;
 }
