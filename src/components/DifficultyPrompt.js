@@ -10,16 +10,20 @@ function DifficultyPrompt({ onSelect }) {
   };
 
   return (
-    <div>
-      <h3>
-        Which difficulty would you like?
-        <button type="button" onClick={handleEasyClick}>
-          Easy
-        </button>
-        <button type="button" onClick={handleHardClick}>
-          Hard
-        </button>
-      </h3>
+    <div className="difficulty-container">
+      <div className="difficulty-h3-buttons">
+        <h3>
+          Which difficulty would you like?
+          <div className="difficulty-buttons">
+            <button type="button" onClick={handleEasyClick}>
+              Easy
+            </button>
+            <button type="button" onClick={handleHardClick}>
+              Hard
+            </button>
+          </div>
+        </h3>
+      </div>
     </div>
   );
 }
