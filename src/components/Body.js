@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import uniqid from "uniqid";
-function Body({ difficulty, images, flip }) {
+function Body({ difficulty, images }) {
   if (!images) {
     return null;
   }

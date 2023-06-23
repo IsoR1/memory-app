@@ -13,7 +13,6 @@ function App() {
   const [highScore, setHighScore] = useState(0);
   const [moves, setMoves] = useState([]);
   const [images, setImages] = useState([]);
-  const [flip, setFlip] = useState(false);
   const handleDifficultySelect = (difficulty) => {
     setSelectedDifficulty(difficulty);
   };
@@ -166,12 +165,6 @@ function App() {
       if (!targetedNode) {
         return;
       }
-      setFlip(true);
-      console.log(flip);
-
-      setTimeout(() => {
-        setFlip(false);
-      }, 1000);
 
       if (moves.includes(targetedNode.dataset.id)) {
         gameOver();
@@ -183,10 +176,6 @@ function App() {
       if (score + 1 >= highScore) {
         setHighScore(score + 1);
       }
-
-      setTimeout(() => {
-        console.log(flip);
-      }, 1000);
     };
 
     document.addEventListener("click", handleClick);
@@ -194,7 +183,7 @@ function App() {
     return () => {
       document.removeEventListener("click", handleClick);
     };
-  }, [score, highScore, flip]);
+  }, [score, highScore]);
 
   useEffect(() => {
     if (images) {
@@ -219,7 +208,7 @@ function App() {
       {selectedDifficulty ? (
         <>
           <Header score={score} highScore={highScore} />
-          <Body difficulty={selectedDifficulty} images={images} flip={flip} />
+          <Body difficulty={selectedDifficulty} images={images} />
           <Footer />
         </>
       ) : (
