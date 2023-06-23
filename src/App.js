@@ -133,6 +133,22 @@ function App() {
             name: "Alyssa",
             path: await import("./image_cards/alyssa-velaryon.jpg"),
           },
+          {
+            name: "Rhaena",
+            path: await import("./image_cards/rhaena-daughter-of-daemon.jpg"),
+          },
+          {
+            name: "Rhaena",
+            path: await import("./image_cards/rhaena-septa.jpg"),
+          },
+          {
+            name: "Rhaenys",
+            path: await import("./image_cards/rhaenys-queen.jpg"),
+          },
+          {
+            name: "Rhaenys",
+            path: await import("./image_cards/rhaenys-daughter-of-aemon.jpg"),
+          },
         ];
       }
 
