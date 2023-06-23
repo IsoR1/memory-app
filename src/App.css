@@ -11,7 +11,7 @@
 
 /* DIFFICULTY PAGE */
 .difficulty-container {
-  background-image: url("/src/images/targaryen-banner.svg");
+  background-image: url("/src/bg_image/targaryen-banner.svg");
   flex-grow: 1;
   display: flex;
   background-position: center;
@@ -28,7 +28,6 @@
 .difficulty-h3-buttons-div {
   display: flex;
   justify-content: center;
-  display: flex;
   flex-basis: 80px;
 }
 
@@ -68,7 +67,7 @@
   justify-content: center;
 }
 
-/* EASY */
+/* CARDS / BODY */
 
 .image {
   height: 250px;
@@ -98,6 +97,21 @@
   max-height: 350px;
   background-color: #57467b;
   transition: transform 0.2s;
+
+  /*  */
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+  height: 300px;
+  width: 250px;
+}
+
+.card-front,
+.card-back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
 }
 
 .card:hover {
@@ -122,6 +136,41 @@
   flex-grow: 1;
   font-size: 1.2rem;
   color: #d3d2c7;
+}
+
+.card-front {
+  /* transform: rotateY(180deg); */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem; */
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
+  /* background-image: url("./bg_image/targaryen-banner.svg"); */
+  border-radius: 20px;
+}
+
+.hidden {
+  display: none;
+}
+.back-image {
+  height: 100%;
+  width: 100%;
+  background-image: url("./bg_image/targaryen-banner.svg");
+}
+
+/* .flip { */
+/* display: none; */
+/* transform: rotateY(180deg); */
+/* } */
+
+.card:hover {
+  transform: rotateY(180deg);
 }
 
 /* FOOTER */

@@ -6,32 +6,6 @@ import Body from "./components/Body.js";
 import Footer from "./components/Footer.js";
 import "./App.css";
 import DifficultyPrompt from "./components/DifficultyPrompt";
-// Easy Images //
-// import maegorJpg from "./image_cards/maegor.jpg";
-// import jaehaerysJpg from "./image_cards/jaehaerys-i.jpg";
-// import baelorJpg from "./image_cards/baelor.jpg";
-// import maegelleJpg from "./image_cards/maegelle.jpg";
-// // HOTD Images/
-// import viserysIJpg from "./image_cards/viserys-i.jpg";
-// import rhaenyraJpg from "./image_cards/rhaenyra-quartered.jpg";
-// import aegonIIJpg from "./image_cards/aegon-ii-greens-bg.jpg";
-// import aemondJpg from "./image_cards/aemond.jpg";
-// import daemonJpg from "./image_cards/daemon.jpg";
-// import harwinJpg from "./image_cards/harwin-strong.jpg";
-// import rhaenysJpg from "./image_cards/rhaenys-daughter-of-aemon.jpg";
-// import laenorJpg from "./image_cards/laenor.jpg";
-// import laenaJpg from "./image_cards/laena.jpg";
-// import jacaerysJpg from "./image_cards/jacaerys.jpg";
-// import lucerysJpg from "./image_cards/lucerys-son-of-rhaenyra.jpg";
-// import jofferyJpg from "./image_cards/joffery-son-of-rhaenyra.jpg";
-// // Hard Images //
-// import aegonIJpg from "./image_cards/aegon-i.jpg";
-// import aegonIIIJpg from "./image_cards/aegon-iii.jpg";
-// import aegonUncrownedJpg from "./image_cards/aegon-uncrowned.jpg";
-// import alysHarrowayJpg from "./image_cards/alys-harroway.jpg";
-// import alysRiversJpg from "./image_cards/alys-rivers.jpg";
-// import alyssaJpg from "./image_cards/alyssa.jpg";
-// import alyssaVelaryonJpg from "./image_cards/alyssa-velaryon.jpg";
 
 function App() {
   const [selectedDifficulty, setSelectedDifficulty] = useState(null);
@@ -39,6 +13,7 @@ function App() {
   const [highScore, setHighScore] = useState(0);
   const [moves, setMoves] = useState([]);
   const [images, setImages] = useState([]);
+  const [flip, setFlip] = useState(false);
   const handleDifficultySelect = (difficulty) => {
     setSelectedDifficulty(difficulty);
   };
@@ -187,9 +162,17 @@ function App() {
     let targetedNode;
     const handleClick = (e) => {
       const targetedNode = e.target.closest(".card");
+
       if (!targetedNode) {
         return;
       }
+      setFlip(true);
+      console.log(flip);
+
+      setTimeout(() => {
+        setFlip(false);
+      }, 1000);
+
       if (moves.includes(targetedNode.dataset.id)) {
         gameOver();
         return;
@@ -201,7 +184,9 @@ function App() {
         setHighScore(score + 1);
       }
 
-      console.log("length", images.length);
+      setTimeout(() => {
+        console.log(flip);
+      }, 1000);
     };
 
     document.addEventListener("click", handleClick);
@@ -209,17 +194,13 @@ function App() {
     return () => {
       document.removeEventListener("click", handleClick);
     };
-  }, [score, highScore]);
+  }, [score, highScore, flip]);
 
   useEffect(() => {
     if (images) {
       let newImgArray = [...images];
-      console.log("before sort", newImgArray);
       newImgArray = newImgArray.sort(() => Math.random() - 0.5);
-      console.log("after, sort: ", newImgArray);
       setImages(newImgArray);
-      console.log(images);
-      console.log("these are the moves: ", moves);
     }
   }, [moves]);
 
@@ -238,7 +219,7 @@ function App() {
       {selectedDifficulty ? (
         <>
           <Header score={score} highScore={highScore} />
-          <Body difficulty={selectedDifficulty} images={images} />
+          <Body difficulty={selectedDifficulty} images={images} flip={flip} />
           <Footer />
         </>
       ) : (

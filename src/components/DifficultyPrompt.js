@@ -1,24 +1,19 @@
 import React, { useState } from "react";
 
-function DifficultyPrompt({ onSelect }) {
-  const handleEasyClick = () => {
-    onSelect("easy");
-  };
-
-  const handleHardClick = () => {
-    onSelect("hard");
-  };
-
+function DifficultyPrompt() {
   return (
     <div className="difficulty-container">
       <div className="difficulty-h3-buttons-div">
         <h3 className="difficulty-h3">
-          Which difficulty would you like?
+          Select your difficulty
           <div className="difficulty-buttons">
-            <button type="button" onClick={handleEasyClick}>
+            <button type="button" data-difficulty="easy">
               Easy
             </button>
-            <button type="button" onClick={handleHardClick}>
+            <button type="button" data-difficulty="hotd">
+              HOTD
+            </button>
+            <button type="button" data-difficulty="hard">
               Hard
             </button>
           </div>
