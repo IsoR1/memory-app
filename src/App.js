@@ -20,7 +20,7 @@ function App() {
   useEffect(() => {
     const difficultyButtonClick = (e) => {
       const targetedButton = e.target;
-      if (!targetedButton.closest(".difficulty-buttons")) {
+      if (!targetedButton.closest(".difficulty-buttons-div")) {
         e.stopPropagation();
         return;
       }
@@ -33,6 +33,7 @@ function App() {
       } else if (targetedButton.dataset.difficulty === "hard") {
         setSelectedDifficulty("hard");
       }
+      console.log(selectedDifficulty);
     };
 
     document.addEventListener("click", difficultyButtonClick);

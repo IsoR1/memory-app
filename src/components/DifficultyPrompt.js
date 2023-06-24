@@ -6,14 +6,26 @@ function DifficultyPrompt() {
       <div className="difficulty-h3-buttons-div">
         <h3 className="difficulty-h3">
           Select your difficulty
-          <div className="difficulty-buttons">
-            <button type="button" data-difficulty="easy">
+          <div className="difficulty-buttons-div">
+            <button
+              type="button"
+              data-difficulty="easy"
+              className="difficulty-button"
+            >
               Easy
             </button>
-            <button type="button" data-difficulty="hotd">
+            <button
+              type="button"
+              data-difficulty="hotd"
+              className="difficulty-button"
+            >
               HOTD
             </button>
-            <button type="button" data-difficulty="hard">
+            <button
+              type="button"
+              data-difficulty="hard"
+              className="difficulty-button"
+            >
               Hard
             </button>
           </div>
