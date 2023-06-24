@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmemory_card=self.webpackChunkmemory_card||[]).push([[40],{40:function(e,c,a){e.exports=a.p+"static/media/aegon-uncrowned.82172756abe3d49b14c3.jpg"}}]);

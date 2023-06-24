@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmemory_card=self.webpackChunkmemory_card||[]).push([[514],{514:function(e,s,a){e.exports=a.p+"static/media/rhaenys-queen.7564fb1b4f456319b92d.jpg"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmemory_card=self.webpackChunkmemory_card||[]).push([[656],{656:function(e,a,s){e.exports=s.p+"static/media/alyssa-velaryon.08631dd1d799b9d3ce0b.jpg"}}]);

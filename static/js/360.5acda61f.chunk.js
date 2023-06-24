@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmemory_card=self.webpackChunkmemory_card||[]).push([[360],{360:function(e,a,c){e.exports=c.p+"static/media/aegon-iii.e4a9adcbb5fe3f5d8f77.jpg"}}]);

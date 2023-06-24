@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmemory_card=self.webpackChunkmemory_card||[]).push([[246],{246:function(e,a,c){e.exports=c.p+"static/media/rhaena-septa.aee1ebe89c7167ed2612.jpg"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmemory_card=self.webpackChunkmemory_card||[]).push([[591],{591:function(e,c,a){e.exports=a.p+"static/media/daemon.3bc0700b7514aff7ed1c.jpg"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmemory_card=self.webpackChunkmemory_card||[]).push([[481],{481:function(e,a,r){e.exports=r.p+"static/media/rhaenyra-quartered.5ab394e04201930cd876.jpg"}}]);

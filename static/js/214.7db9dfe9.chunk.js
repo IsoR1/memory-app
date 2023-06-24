@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmemory_card=self.webpackChunkmemory_card||[]).push([[214],{214:function(e,a,c){e.exports=c.p+"static/media/jaehaerys-i.14af04d56dae8ce40dd4.jpg"}}]);

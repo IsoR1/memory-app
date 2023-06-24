@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmemory_card=self.webpackChunkmemory_card||[]).push([[893],{893:function(e,a,c){e.exports=c.p+"static/media/maegelle.a432e39f5a3987efe021.jpg"}}]);

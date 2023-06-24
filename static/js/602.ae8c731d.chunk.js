@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmemory_card=self.webpackChunkmemory_card||[]).push([[602],{602:function(e,s,a){e.exports=a.p+"static/media/alys-rivers.45ebb602d7f1791ba199.jpg"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmemory_card=self.webpackChunkmemory_card||[]).push([[762],{762:function(e,a,c){e.exports=c.p+"static/media/laena.6a0b0215b0c678d654f8.jpg"}}]);

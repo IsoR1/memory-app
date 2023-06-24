@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmemory_card=self.webpackChunkmemory_card||[]).push([[981],{981:function(e,c,s){e.exports=s.p+"static/media/aegon-ii-greens-bg.fcc8565d241005fe4e80.jpg"}}]);

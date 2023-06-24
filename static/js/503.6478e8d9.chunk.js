@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmemory_card=self.webpackChunkmemory_card||[]).push([[503],{503:function(e,s,a){e.exports=a.p+"static/media/viserys-i.837b9fe038f4a82936b4.jpg"}}]);

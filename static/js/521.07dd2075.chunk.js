@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmemory_card=self.webpackChunkmemory_card||[]).push([[521],{521:function(e,a,c){e.exports=c.p+"static/media/lucerys-son-of-rhaenyra.1cf763517e3ae8a2f4b6.jpg"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmemory_card=self.webpackChunkmemory_card||[]).push([[786],{786:function(e,a,c){e.exports=c.p+"static/media/laenor.7ebaec0903e99e217b13.jpg"}}]);

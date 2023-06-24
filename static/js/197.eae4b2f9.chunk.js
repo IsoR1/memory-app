@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmemory_card=self.webpackChunkmemory_card||[]).push([[197],{197:function(e,a,r){e.exports=r.p+"static/media/joffery-son-of-rhaenyra.1ba3b16b42c5547f99d1.jpg"}}]);

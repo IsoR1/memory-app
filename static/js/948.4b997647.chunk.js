@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmemory_card=self.webpackChunkmemory_card||[]).push([[948],{948:function(a,e,r){a.exports=r.p+"static/media/alys-harroway.5a27da0d2baed1efaf79.jpg"}}]);
